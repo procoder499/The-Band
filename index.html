@@ -11,10 +11,10 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Band">Band</a></li>
+                <li><a href="#Tour">Tour</a></li>
+                <li><a href="#Contact">Contact</a></li>
                 <li>
                     <a href="#">
                         More
@@ -43,7 +43,7 @@
         </div>
         <div id="content">
             <!-- about section -->
-            <div class="content-section">
+            <div id="Band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -66,7 +66,7 @@
                 <div class="clear"></div>
             </div>
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="Tour" class="tour-section">
                 <div class="content-section">
                      <h2 class="section-heading text-white">TOUR DATES</h2>
                      <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -84,7 +84,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -93,7 +93,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -102,7 +102,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>  
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <!-- Contact -->
-            <div class="content-section" style="margin-bottom: 500px;">
+            <div id="Contact" class="content-section" style="margin-bottom: 5px;">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!
 
@@ -124,30 +124,42 @@
                         <form action="">
                             <div class="row">
                                 <div class="col col-half">
-                                    <input type="text" name="" placeholder="Name" id="" class="form-control">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
                                 <!-- <div class="clear"></div> -->
                                 <div class="col col-half">
-                                    <input type="email" email="" placeholder="Email" id="" class="form-control">
+                                    <input type="email" email="" placeholder="Email" required id="" class="form-control">
                                 </div>
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" email="" placeholder="Message" id="" class="form-control">
+                                    <input type="text" email="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="mt-16" type="submit" value="SEND">
+                            <input class="pull-right btn mt-16" type="submit" value="SEND">
                         </form>
 
                     </div>
                 </div>
 
                 </p>
-            </div>            
+            </div>   
+            <!-- End: Contact section -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="">
+            </div>
         </div>
         
         <div id="footer">
-
+            <div class="social">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
     <div class="modal js-modal">
