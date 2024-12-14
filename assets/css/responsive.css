@@ -12,8 +12,28 @@
 
 /* Mobile  */
 @media (max-width: 740px) {
+    .s-col-full{
+        width: 100%;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
     #nav {
         display: block;
+    }
+
+    #nav li a{
+        padding: 1px 24px;
     }
 
     #nav > li {
@@ -24,11 +44,20 @@
         display: inline-block;
     }
 
-    #header .mobile-menu-btn {
-        display: block;
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
     }
 
-    #header .search-btn {
-        display: none;
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 40px;
+    }
+    #content .member-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+    #content .member-img{
+        width: 60%;
     }
 }
